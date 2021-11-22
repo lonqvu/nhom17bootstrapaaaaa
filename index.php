@@ -1,3 +1,3 @@
 <?php
-	echo "haha";
+header("location: QuanLyTK.php");
 ?>
