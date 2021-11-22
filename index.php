@@ -1,3 +1,3 @@
 <?php
-	header("location: Home.php ");
+	echo "haha";
 ?>
