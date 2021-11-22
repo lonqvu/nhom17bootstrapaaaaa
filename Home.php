@@ -28,7 +28,7 @@ $query_spnb = mysqli_query($connect, $sql_spnb);
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="Home.php"><img src="../tourdulich/img/test3.png" alt=""></a>
+                <a class="navbar-brand" href="Home.php"><img src="img/test3.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -85,7 +85,7 @@ $query_spnb = mysqli_query($connect, $sql_spnb);
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../tourdulich/img/quang-cao-du-lich_113702379.png" class="d-block w-100" alt="...">
+                <img src="img/quang-cao-du-lich_113702379.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
 
                 </div>
@@ -231,7 +231,7 @@ $query_spnb = mysqli_query($connect, $sql_spnb);
         </div>
     </footer>
     <!--End footer-->
-    <script src="../tourdulich/js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

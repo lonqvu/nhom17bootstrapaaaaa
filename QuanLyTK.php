@@ -26,7 +26,7 @@ $query_dm = mysqli_query($connect,$sql_tk);
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="Home.php"><img src="../tourdulich/img/test3.png" alt=""></a>
+                <a class="navbar-brand" href="Home.php"><img src="img/test3.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -83,7 +83,7 @@ $query_dm = mysqli_query($connect,$sql_tk);
                             <h2>Quản lý <b>sản phẩm Tour du lịch</b></h2>
                         </div>
                         <div class="col-sm-6">
-                            <a href="./Danhky.php" class="btn btn-success "><i class="fas fa-plus-square"></i> <span>Thêm tài khoản</span></a>
+                            <a href="Danhky.php" class="btn btn-success "><i class="fas fa-plus-square"></i> <span>Thêm tài khoản</span></a>
                             
                         </div>
                     </div>
@@ -121,6 +121,6 @@ $query_dm = mysqli_query($connect,$sql_tk);
                 </div>
         </a>
         <script src="js/manager.js" type="text/javascript"></script>
-        <script src="../tourdulich/js/script.js"></script>
+        <script src="js/script.js"></script>
     </body>
     </html>

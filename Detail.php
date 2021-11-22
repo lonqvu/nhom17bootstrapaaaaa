@@ -79,7 +79,7 @@ $query_chitietSP1 = mysqli_query($connect, $sql_chitietSP);
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="Home.php"><img src="../tourdulich/img/test3.png" alt=""></a>
+                <a class="navbar-brand" href="Home.php"><img src="tourdulich/img/test3.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -135,7 +135,7 @@ $query_chitietSP1 = mysqli_query($connect, $sql_chitietSP);
             <div class="col-sm-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="./Home.php">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="Home.php">Trang chủ</a></li>
                         <?php while ($row_chitietSP1 = mysqli_fetch_assoc($query_chitietSP1)) { ?>
                             <li class="breadcrumb-item active" aria-current="page"><?php echo $row_chitietSP1['ten_sp'];?></li>
                             
@@ -182,10 +182,10 @@ $query_chitietSP1 = mysqli_query($connect, $sql_chitietSP);
                                     <article class="gallery-wrap">
                                         <div class="img-big-wrap">
                                             <div> <a href="#"><img src="img/<?php echo $row_chitietSP['anh_sp'] ?>"></a></div>
-                                        </div> <!-- slider-product.// -->
+                                        </div> 
                                         <div class="img-small-wrap">
-                                        </div> <!-- slider-nav.// -->
-                                    </article> <!-- gallery-wrap .end// -->
+                                        </div> 
+                                    </article> 
                                 </aside>
                                 <aside class="col-sm-7">
                                     <article class="card-body p-5">
@@ -195,7 +195,7 @@ $query_chitietSP1 = mysqli_query($connect, $sql_chitietSP);
                                             <span class="price h3 text-warning">
                                                 <span class="currency">Giá </span><span class="num"><?php echo number_format($row_chitietSP['gia_sp']) ?> VND</span>
                                             </span>
-                                        </p> <!-- price-detail-wrap .// -->
+                                        </p>
                                         <dl class="item-property">
                                             <dt>Mô tả</dt>
                                             <dd>
@@ -204,13 +204,13 @@ $query_chitietSP1 = mysqli_query($connect, $sql_chitietSP);
                                         </dl>
 
                                         <hr>
-                        </div> <!-- row.// -->
+                        </div>
                         <hr>
                         <a href="Cart.php?id_sp=<?php echo $row_chitietSP['id_sp']; ?>" class="btn btn-lg btn-success btn-block text-uppercase"> Đặt hàng </a>
-                        </article> <!-- card-body.// -->
-                        </aside> <!-- col.// -->
-                    </div> <!-- row.// -->
-                </div> <!-- card.// -->
+                        </article> 
+                        </aside> 
+                    </div> 
+                </div> 
             <?php } ?>
 
             </div>
@@ -264,7 +264,7 @@ $query_chitietSP1 = mysqli_query($connect, $sql_chitietSP);
         </div>
     </footer>
     <!--End footer-->
-    <script src="../tourdulich/js/script.js"></script>
+    <script src="tourdulich/js/script.js"></script>
 </body>
 
 </html>
