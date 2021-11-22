@@ -1,0 +1,309 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#nav-bar{
+    
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    font-weight: 600;
+    color: white;
+
+}
+.navbar{
+
+    background: rgba(15, 65, 131, 0.685) !important; 
+    backdrop-filter: blur(70px) !important; 
+ 
+    
+}
+.navbar-nav li a{
+    color: white !important;
+}
+.navbar-nav li a:hover{
+    color: rgb(247, 101, 101)
+}
+
+.navbar-brand img{
+   height: 40px;
+}
+
+
+.icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+
+}
+a{
+  
+    text-decoration: none !important;
+
+}
+.icon i {
+    margin-right: 20px;
+    color: white;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.icon i:hover{
+    color: rgb(250, 227, 16) !important;
+    transform: scale(1.1);
+}
+a.nav-link{
+    transform: scale(1);
+    transition: all 0.5s;
+    margin-right: 20px;
+    float: right;
+}
+a.nav-link:hover{
+    transform: scale(1.1) !important;
+    color: rgb(250, 227, 16) !important;
+}
+
+/*menubar*/
+.navbar-toggler{
+    outline: none;
+}
+.navbar-toggler i{
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.search-bar-container{
+    position:absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: rgba(15, 65, 131, 0.685) !important; 
+   
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.search-bar-container label{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.search-bar-container.active{
+    
+    backdrop-filter: blur(70px) !important; 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/*silde*/
+.carousel-caption{
+    margin-bottom: 150px;
+}
+.carousel-caption h5{
+    
+    font-weight: 600;
+    font-size: 50px;
+}
+.carousel-caption p{
+    font-size: 25px;
+}
+.category_block li:hover {
+    background-color: #007bff;
+}
+.category_block li:hover a {
+    color: #ffffff;
+}
+.category_block li a {
+    color: #343a40;
+}
+#sanphamnoibat{
+    margin-top: 20px;
+}
+
+
+.pagination {
+    margin-top: 20px;
+}
+#roww .card{
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+.card .img{ 
+
+    height: 140px;
+    width: 265px !important;
+    margin-left: auto !important;
+    margin-right: auto;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.card .img:hover{
+    transform: scale(1.1);
+
+}
+.card-body .nd{
+    color: black !important;
+}
+
+img.element.style{
+    width: 420px;
+}
+
+.list-group ul li a{
+    color: black !important;
+}
+footer {
+    background: #343a40;
+    padding: 40px;
+    margin-top: 20px;
+}
+footer a {
+    color: #f8f9fa!important
+}
+.bgc{
+    background-image: url(image/Clothes+and+shoes-74_banner.jpg);
+    /*background-image: url("https://envato-shoebox-0.imgix.net/a553/ba21-ce80-45ee-82d4-120907cdb414/Clothes+and+shoes-74_banner.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=a9cc1545e602fe3d3e6c9faed39f0a84");*/
+}
+.show_txt{
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+a .active{
+    color: white;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 500px !important;
+   
+}
+#carouselExampleCaptions{
+    margin-bottom: 50px;
+    
+}
+.carousel-caption{
+    margin-bottom: 150px;
+}
+.carousel-caption h5{
+    
+    font-weight: 600;
+    font-size: 50px;
+}
+.navbar-toggler-icon{
+    z-index: 10004;
+
+}
+.money{
+    font-size: 20px;
+    color: red;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width:14400px){
+
+
+    a.btn.btn-success{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:1400px){
+
+    .card .img{ 
+
+        height: 140px;
+        width: 220px !important;
+        margin-left: auto !important;
+        margin-right: auto;
+    
+    }
+    a.btn.btn-success{
+        width: 100%;
+    }
+    .money{
+        font-size: 17px;
+       
+    }
+    
+}
+@media screen and (max-width:1200px){
+
+    .card .img{ 
+
+        height: 140px;
+        width: 180px !important;
+        margin-left: auto !important;
+        margin-right: auto;
+    
+    }
+    a.btn.btn-success{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:992px){
+    .icons{
+       position: absolute;
+       top: 15px;
+       right: 40px;
+       align-items: center;
+    }
+    .card .img{ 
+
+        height: 140px;
+        width: 210px !important;
+        margin-left: auto !important;
+        margin-right: auto;
+    
+    }
+}
+@media screen and (max-width:768px){
+    .card .img{ 
+
+        height: 140px;
+        width: 340px !important;
+        margin-left: auto !important;
+        margin-right: auto;
+    
+    }
+    .btn-actions a button{
+        margin-bottom: 10px !important;
+    }
+}
+@media screen and (max-width:576px){
+    .card .img{ 
+
+        height: 140px;
+        width: 420px !important;
+        margin-left: auto !important;
+        margin-right: auto;
+    
+    }
+}
+.card-headerr{
+    border-radius:5px;
+    color: white;
+    line-height: 50px;
+    margin-top: 50px;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    background-color: #435d7d !important;
+}
+#cad{
+    margin-top: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+

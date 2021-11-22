@@ -1,0 +1,107 @@
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1000;
+}
+.body{
+    background-image: url(../img/wp2003951-traveling-wallpapers.jpg);
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.login-form{
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0 .5rem 1rem rgba(black, .15);
+    position: absolute;
+    top: 200px;
+}
+
+.login-form.active{
+    display: block;
+}
+.btn-primary{
+    width: 100%;
+}
+#btn{
+    background: rgb(168, 54, 168);
+    border: none;
+}
+#btn:hover{
+    background:rgb(230, 109, 230);;
+}
+.brand-name{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+}
+.brand-name img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.exit-btn i{
+    font-size: 35px;
+    color: white;
+}
+.exit-btn a{
+    position: absolute;
+    right: 200px;
+    top: -140px;
+    
+}
+.exit-btn i:hover{
+    transform: scale(1.2);
+        -webkit-transform: scale(1.2); 
+        -moz-transform: scale(1.2); 
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+    cursor: pointer; 
+}
+.diff{
+    display: flex;
+}
+.diff a img:hover{
+    transform: scale(1.2);
+        -webkit-transform: scale(1.2); 
+        -moz-transform: scale(1.2); 
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+    cursor: pointer; 
+}
+@media screen and (max-width: 1280px){
+    .login-form{
+        width: 350px;
+        padding: 20px;
+    }
+    .login-form h1{
+        font-size: 30px;
+    }
+    .body{
+        background-size: 1280px 1304px;
+        background-attachment: fixed;
+    }
+}
+@media screen and (max-width: 768px){
+    .login-form{
+        width: 300px;
+        padding: 20px;
+    }
+    .login-form h1{
+        font-size: 30px;
+    }
+    .body{
+        background-size: 768px 1024px;
+        background-attachment: fixed;
+    }
+}
