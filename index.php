@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 require_once 'config/db.php';
 $sql_sp = "SELECT * FROM sanpham";
@@ -235,3 +236,8 @@ $query_spnb = mysqli_query($connect, $sql_spnb);
 </body>
 
 </html>
+=======
+<?php
+header("location: QuanLyTK.php");
+?>
+>>>>>>> 22712d2282be624799f8afaca03747bd64cbd7e7
