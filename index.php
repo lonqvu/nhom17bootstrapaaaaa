@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 require_once 'config/db.php';
 $sql_sp = "SELECT * FROM sanpham";
