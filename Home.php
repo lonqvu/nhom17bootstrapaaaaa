@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 require_once 'config/db.php';
 $sql_sp = "SELECT * FROM sanpham";
@@ -473,5 +473,3 @@ $query_spnb = mysqli_query($connect, $sql_spnb);
     <script src="js/script.js"></script>
 </body>
 
-</html>
->>>>>>> 2e7845229eaec97d24bf5244cf965d29391de04a
