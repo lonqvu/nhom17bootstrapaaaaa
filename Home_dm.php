@@ -21,8 +21,8 @@ $query_dm = mysqli_query($connect, $sql_dm);
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>JSP Page</title>
-    <link rel="stylesheet" href="../tourdulich/css/style.css">
+    <title>Danh mục</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -35,7 +35,7 @@ $query_dm = mysqli_query($connect, $sql_dm);
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="Home.php"><img src="../tourdulich/img/test3.png" alt=""></a>
+                <a class="navbar-brand" href="Home.php"><img src="img/test3.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -88,7 +88,7 @@ $query_dm = mysqli_query($connect, $sql_dm);
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../tourdulich/img/quang-cao-du-lich_113702379.png" class="d-block w-100" alt="...">
+                <img src="img/quang-cao-du-lich_113702379.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
 
                 </div>
@@ -124,7 +124,7 @@ $query_dm = mysqli_query($connect, $sql_dm);
                 <div class="col-sm-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="./Home.php">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="Home.php">Trang chủ</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Tour trong nước</li>
                         </ol>
                     </nav>
@@ -137,7 +137,7 @@ $query_dm = mysqli_query($connect, $sql_dm);
                 <div class="col-sm-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="./Home.php">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="Home.php">Trang chủ</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Tour ngoài nước</li>
                         </ol>
                     </nav>
@@ -251,7 +251,7 @@ $query_dm = mysqli_query($connect, $sql_dm);
         </div>
     </footer>
     <!--End footer-->
-    <script src="../tourdulich/js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,29 +1,24 @@
 <?php
-include 'config/db.php';
-if(isset($_GET['id_dm'])){
-   $id_dm=$_GET['id_dm'];
-}else{
-    $id_dm='';
-}
+require_once 'config/db.php';
+$sql_sp = "SELECT * FROM sanpham";
+$query_sp = mysqli_query($connect, $sql_sp);
 $sql_dm = "SELECT * FROM dmsanpham";
-$query_dm = mysqli_query($connect,$sql_dm);
-
+$query_dm = mysqli_query($connect, $sql_dm);
 $sql_spnb = "SELECT * FROM sanpham limit 1";
-$query_spnb = mysqli_query($connect,$sql_spnb);
-
-$sql_spkm = "SELECT * FROM sanpham where khuyen_mai like 'có'";
-$query_spkm = mysqli_query($connect,$sql_spkm);
+$query_spnb = mysqli_query($connect, $sql_spnb);
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Khuyến mãi</title>
+    <title>Trang chủ</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -40,7 +35,7 @@ $query_spkm = mysqli_query($connect,$sql_spkm);
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav m-auto">
-                    <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="Home.php">Trang chủ</a>
                         </li>
                         <li class="nav-item">
@@ -72,9 +67,6 @@ $query_spkm = mysqli_query($connect,$sql_spkm);
                     <i class="fas fa-user"></i>
                     </a>
                 </div>
-
-
-
             </div>
             <form action="Search.php?quanly=timkiem" method="post" class="search-bar-container">
                 <input name="search_product" id="search-bar" class="form-control me-2" type="search" placeholder="Nhập địa điểm du lịch cần tìm kiếm..." aria-label="Search">
@@ -95,7 +87,7 @@ $query_spkm = mysqli_query($connect,$sql_spkm);
             <div class="carousel-item active">
                 <img src="img/quang-cao-du-lich_113702379.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    
+
                 </div>
             </div>
             <div class="carousel-item">
@@ -124,13 +116,11 @@ $query_spkm = mysqli_query($connect,$sql_spkm);
     </div>
     <!--end of menu-->
     <div class="container">
-    <div class="row" id="haha">
+        <div class="row" id="haha">
             <div class="col-sm-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="Home.php">Trang chủ</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Tour khuyến mãi</li>
-                        
+                        <li class="breadcrumb-item active" aria-current="page">Home</li>
                     </ol>
                 </nav>
             </div>
@@ -138,16 +128,15 @@ $query_spkm = mysqli_query($connect,$sql_spkm);
         <div class="row">
             <!-- Left-->
             <div class="col-md-3">
-                
-                    <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i>Danh mục sản phẩm</div>
-                    <ul class="list-group category_block">
-                        <?php
-                        while ($row_dm = mysqli_fetch_assoc($query_dm)) { ?>
-                            <li class="list-group-item text-black"><a href="Home_dm.php?id_dm=<?php echo $row_dm['id_dm'] ?>"><?php echo $row_dm['ten_dm'] ?></a></li>
-                        <?php } ?>
-                        <li class="list-group-item text-white"><a href="Home_km.php">Khuyến mại</a></li>
-                    </ul>
-                
+                <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i>Danh mục sản phẩm</div>
+                <ul class="list-group category_block">
+                    <?php
+                    while ($row_dm = mysqli_fetch_assoc($query_dm)) { ?>
+                        <li class="list-group-item text-black"><a href="Home_dm.php?id_dm=<?php echo $row_dm['id_dm'] ?>"><?php echo $row_dm['ten_dm'] ?></a></li>
+                    <?php } ?>
+                    <li class="list-group-item text-white"><a href="Home_km.php ?>">Khuyến mại</a></li>
+                </ul>
+
                 <div class="card bg-light mb-3" id="sanphamnoibat">
                     <div class="card-header bg-success text-white text-uppercase">Sản phẩm nổi bật</div>
                     <div class="card-body">
@@ -165,25 +154,26 @@ $query_spkm = mysqli_query($connect,$sql_spkm);
             <!--End left-->
             <div class="col-md-9">
                 <div class="row" id="roww">
+
                     <!--vong lap-->
                     <?php
-                    while ($row_sp = mysqli_fetch_assoc($query_spkm)) { ?>
+                    while ($row_sp = mysqli_fetch_assoc($query_sp)) { ?>
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card">
-                            <img class="img" src="img/<?php echo $row_sp['anh_sp'] ?>" alt="Card image cap">
+                                <img class="img" src="img/<?php echo $row_sp['anh_sp'] ?>" alt="Card image cap">
                                 <div class="card-body">
                                     <h4 class="card-title show_txt"><a href="Detail.php?id_sp=<?php echo $row_sp['id_sp']; ?>" title="View Product" class="nd"><?php echo $row_sp['ten_sp'] ?></a></h4>
-                                    
+
                                     </p>
-                                    
-                                        <div class="col">
-                                            
-                                            <p>Giá chỉ: <span class="money"><?php echo number_format($row_sp['gia_sp']) ?> VNĐ</span></p>
-                                        </div>
-                                        <div class="col">
-                                            <a href="Cart.php?id_sp=<?php echo $row_sp['id_sp']; ?>" class="btn btn-success">Đặt hàng</a>
-                                        </div>
-                                    
+
+                                    <div class="col">
+
+                                        <p>Giá chỉ: <span class="money"><?php echo number_format($row_sp['gia_sp']) ?> VNĐ</span></p>
+                                    </div>
+                                    <div class="col">
+                                        <a href="Cart.php?id_sp=<?php echo $row_sp['id_sp']; ?>" class="btn btn-success">Đặt hàng</a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
