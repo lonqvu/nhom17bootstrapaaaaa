@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 include 'config/db.php';
 $sql_dm = "select * from dmsanpham";
@@ -178,5 +178,3 @@ if (isset($_POST['sbm'])) {
     </div>
 </body>
 
->>>>>>> 2e7845229eaec97d24bf5244cf965d29391de04a
-</html>
