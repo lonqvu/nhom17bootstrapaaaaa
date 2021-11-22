@@ -134,7 +134,7 @@ $query_spnb = mysqli_query($connect, $sql_spnb);
                     while ($row_dm = mysqli_fetch_assoc($query_dm)) { ?>
                         <li class="list-group-item text-black"><a href="Home_dm.php?id_dm=<?php echo $row_dm['id_dm'] ?>"><?php echo $row_dm['ten_dm'] ?></a></li>
                     <?php } ?>
-                    <li class="list-group-item text-white"><a href="Home_km.php?>">Khuyến mại</a></li>
+                    <li class="list-group-item text-white"><a href="Home_km.php">Khuyến mại</a></li>
                 </ul>
 
                 <div class="card bg-light mb-3" id="sanphamnoibat">
